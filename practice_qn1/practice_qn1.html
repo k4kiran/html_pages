@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> My WEBPAGE </title>
+    <style>
+    .content
+    {
+      margin: :auto;
+      max-width:500px
+    }
+    h1
+    {
+      font-family: Arial;
+      font-size: 30px
+    }
+    label
+    {
+      font-family:Arial;
+      font-size: 12px   
+    }
+    input
+    {
+      padding: 15px;
+      border-color:#d5d5d5
+    }
+    textarea
+    {
+      padding : 15px;
+      border-color: #d5d5d5
+    }
+    input[type=submit]
+    {
+      background-color: #25274d;
+      color: #ffffff;
+    }
+    </style>   
+  </head>
+  <body>
+    <div class="content">
+    <form id="sampleform"></form>
+      <h1><strong>Send a message</strong></h1>
+      <label>First Name:</br></label>
+      <input type="text" name="namefield1" value="Enter First Name"></br></br>     
+      <label>Last Name:</label></br>
+      <input type="text" name="namefield2" value="Enter Last Name"></br></br>      
+      <input type="radio" name="jobfield1" value="Professional"><label><strong>Professional</strong></label></style>
+      &nbsp&nbsp&nbsp&nbsp
+      <input type="radio" name="jobfield1" value="Entrepreneur"><label><strong>Entrepreneur</strong></label></br></br>     
+      <label>Email:</label></br>
+      <input type="email" name="email1" value="Enter email"></br></br>      
+      <label>Comment:</label></br>      
+      <textarea name="commentarea" form="sampleform"></textarea></br></br>      
+      <input type="checkbox" name=accept value=acceptform><label><strong>I accept the Terms and Conditions</strong></label></br></br>      
+      <input type="submit" value="Submit">      
+    </form>
+    </div>
+  </body>
+  </html>
