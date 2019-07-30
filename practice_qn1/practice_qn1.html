@@ -5,11 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> My WEBPAGE </title>
     <style>
-    .content
-    {
-      margin: :auto;
-      max-width:500px
-    }
     h1
     {
       font-family: Arial;
@@ -20,44 +15,47 @@
       font-family:Arial;
       font-size: 12px   
     }
-    input
+    input[type=text],input[type=email],textarea
     {
       padding: 15px;
-      border-color:#d5d5d5;
-      border-radius: 10px
-    }
-    textarea
-    {
-      padding : 15px;
-      border-color: #d5d5d5;
-      border-radius: :10px
+      border :1px solid#d5d5d5;
+      border-radius: 5px;
+      width: 600px;
+      box-shadow: none;
+      margin-top:10px;
+      margin-bottom:10px
     }
     input[type=submit]
     {
       background-color: #25274d;
+      border:1px solid #d5d5d5;
       color: #ffffff;
-      border-radius: 5px
+      border-radius: 5px;
+      width:120px;
+      height: 40px;
     }
+    
     </style>   
   </head>
   <body>
-    <div class="content">
-    <form id="sampleform"></form>
-      <h1><strong>Send a message</strong></h1>
-      <label>First Name:</br></label>
-      <input type="text" name="namefield1" value="Enter First Name"></br></br>     
-      <label>Last Name:</label></br>
-      <input type="text" name="namefield2" value="Enter Last Name"></br></br>      
-      <input type="radio" name="jobfield1" value="Professional"><label><strong>Professional</strong></label></style>
-      &nbsp&nbsp&nbsp&nbsp
-      <input type="radio" name="jobfield1" value="Entrepreneur"><label><strong>Entrepreneur</strong></label></br></br>     
-      <label>Email:</label></br>
-      <input type="email" name="email1" value="Enter email"></br></br>      
-      <label>Comment:</label></br>      
-      <textarea name="commentarea" form="sampleform"></textarea></br></br>      
-      <input type="checkbox" name=accept value=acceptform><label><strong>I accept the Terms and Conditions</strong></label></br></br>      
-      <input type="submit" value="Submit">      
-    </form>
+    <div style="max-width: 500px; margin:auto">
+      <form id="sampleform"></form>
+        <h1><strong>Send a message</strong></h1>
+        <label>First Name:</br></label>
+        <input type="text" name="namefield1" placeholder="Enter First Name" value=""" 
+        ></br></br>     
+        <label>Last Name:</label></br>
+        <input type="text" name="namefield2" placeholder="Enter Last Name" value=""></br></br>      
+        <input type="radio" name="jobfield1" value="Professional"><label><strong>Professional</strong></label></style>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <input type="radio" name="jobfield1" value="Entrepreneur"><label><strong>Entrepreneur</strong></label></br></br>     
+        <label>Email:</label></br>
+        <input type="email" name="email1" placeholder="Enter email" value=""></br></br>      
+        <label>Comment:</label></br>   
+        <textarea name="commentarea" form="sampleform"></textarea></br></br>      
+        <input type="checkbox" name=accept value=acceptform><label><strong>I accept the Terms and Conditions</strong></label></br></br>      
+        <input type="submit" value="Submit">      
+      </form>
     </div>
   </body>
   </html>
