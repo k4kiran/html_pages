@@ -4,11 +4,91 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> My WEBPAGE </title>
+    <style>
+      
+      body
+      {
+        font-family: Arial;       
+      }
+      ul
+      {
+        margin:0px;
+        padding:0px;
+        list-style:none;
+      }
+      li
+      {
+        display:inline;
+        position:relative;
+      }
+      li:hover
+      {
+        cursor: pointer;
+        background: #0060ff;
+      }
+      ul ul
+      {
+        position:absolute;
+        display:none;
+      }
+      ul ul ul
+      {
+        left: 100%;
+        top: 0;
+        position:absolute;
+        display :none;
+      }
+      li:hover > ul
+      {
+        display:block;
+      }
+
+      ul li
+      {
+        float:left;
+        width:200px;
+        height:40px;
+        background-color: #003470;
+        line-height:40px;
+        text-align:center;
+      }     
+      ul li a
+      {
+        text-decoration: none;
+        color:white;
+        display:block;
+      }
+      
+      ul li a:hover
+      {
+        background-color: aliceblue;
+        color: #0060ff;
+      }
+
+
+    </style>
   </head>
 
   <body>
-    <ul>
-      
+    <ul class="mainmenu">
+      <li><a>Home</a></li>
+      <li><a>About</a>
+        <ul class="submenu1">
+          <li><a>SubMenu Level1</a></li>
+          <li><a>SubMenu Level1</a>
+            <ul class = "submenu2">
+              <li><a>Submenu Level2</a></li>
+              <li><a>Submenu Level2</a></li>  
+              <li><a>Submenu Level2</a></li>
+            </ul>
+          </li>
+          <li><a>SubMenu Level1</a></li>
+        </ul>
+      </li>
+      <li><a>Portfolio</a></li>
+      <li><a>Products</a></li>
+      <li><a>Blog</a></li>
+      <li><a>Contact</a></li>
     </ul>
 
   </body>
