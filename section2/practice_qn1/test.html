@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> My WEBPAGE </title>
+    <style>
+      body
+      {
+        background-color: black;
+      }
+      .header
+      {
+        padding: 30px;
+        text-align: center;
+        background: white;
+        color: black;
+        margin:5px;
+      }
+      .footer
+      {
+        padding: 30px;
+        text-align: center;
+        background: grey;
+        color: black;
+        margin:5px;
+      }
+      .container
+      {
+        background-color:#f1f1f1;
+        max-width: 980px;
+        margin:auto;
+        font-family: Arial;
+        padding:30px;
+      }
+      .heading1,.heading2
+      {
+        max-width:730px;
+        padding:40px 25px 40px 25px;
+        height:400px;
+        margin:5px;
+      }
+      /*delete after use*/
+      .heading1{ background:green;} 
+      .heading2{background:rgb(201, 198, 24);}
+      .about{background:cyan}
+      .follow{background:violet}
+      .post{background:orange}
+
+
+      .about,.post,.follow
+      {
+        max-width:200px;
+        padding:40px 25px 40px 25px;
+        margin:5px;
+      }
+      h1
+      {
+        font-size:44px;
+      }
+      h3
+      {
+        font-size:18px;
+      }
+      .content 
+      {
+        display:flex;
+      }
+      .leftcontent
+      {
+        display:flex;
+        flex-direction: column;
+      }
+    </style>   
+  </head>
+  <body>
+    <div class=container>
+      <div class=header>
+        <h1>Blog Name</h1>
+      </div>
+      <div class=content>
+        <div class=leftcontent>
+          <div class=heading1>
+            <h3>Title Heading 1</h3>
+            <label>image</label>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit culpa voluptas ea.</p>
+          </div>
+          <div class=heading2>
+              <h3>Title Heading2</h3>
+              <label>image</label>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, voluptate consequuntur reprehenderit at quisquam quasi explicabo harum laborum hic impedit!</p>
+          </div>
+        </div>
+        <div class=rightcontent>
+          <div class=about>
+            <h3>about me</h3>
+            <label>image</label>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione vel recusandae molestias magni dolore? Cumque id excepturi magnam minima deserunt sed mollitia pariatur atque nam. Ea dolores eum et fuga.</p>
+          </div>
+          
+          <div class=post>
+            <h3>posts</h3>
+            <label>image</label></br>
+            <label>image</label></br>
+            <label>image</label></br>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, perferendis natus? Fugiat ex possimus mollitia.</p>
+          </div>
+          <div class=follow>
+            <h3>follow</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat velit dolore natus provident repudiandae! Minus vel nam iusto veritatis vitae!</p>
+          </div>
+        </div>
+      </div>
+      <div class=footer>
+        <h2>Footer</h2>
+      </div>
+      
+    </div>
+  </body>
+  </html>

@@ -8,20 +8,20 @@
       
       body
       {
-        font-family: Arial;       
+        font-family: Arial;
+        font-size:12px;       
       }
       ul
       {
-        margin:0px;
         padding:0px;
         list-style:none;
       }
       li
       {
-        display:inline;
+        display:block;
         position:relative;
       }
-      li:hover
+      ul li:hover
       {
         cursor: pointer;
         background: #0060ff;
@@ -31,6 +31,16 @@
         position:absolute;
         display:none;
       }
+      ul li ul li
+      {
+        background-color: #0060ff;
+      }
+      
+      ul li ul li :hover
+      {
+        color:white;
+      }
+      
       ul ul ul
       {
         left: 100%;
@@ -61,35 +71,42 @@
       
       ul li a:hover
       {
-        background-color: aliceblue;
-        color: #0060ff;
+        background-color: #003470;
       }
+      div
+      {
+        background-color: #ffffff;
+        padding:30px;
+      }
+      
+
 
 
     </style>
   </head>
 
   <body>
-    <ul class="mainmenu">
-      <li><a>Home</a></li>
-      <li><a>About</a>
-        <ul class="submenu1">
-          <li><a>SubMenu Level1</a></li>
-          <li><a>SubMenu Level1</a>
-            <ul class = "submenu2">
-              <li><a>Submenu Level2</a></li>
-              <li><a>Submenu Level2</a></li>  
-              <li><a>Submenu Level2</a></li>
-            </ul>
-          </li>
-          <li><a>SubMenu Level1</a></li>
-        </ul>
-      </li>
-      <li><a>Portfolio</a></li>
-      <li><a>Products</a></li>
-      <li><a>Blog</a></li>
-      <li><a>Contact</a></li>
-    </ul>
-
+    <div class=dropdown>
+      <ul class="mainmenu">
+        <li><a>Home</a></li>
+        <li><a>About</a>
+          <ul class="submenu1">
+            <li><a>SubMenu Level1</a></li>
+            <li><a>SubMenu Level1</a>
+              <ul class = "submenu2">
+                <li><a>Submenu Level2</a></li>
+                <li><a>Submenu Level2</a></li>  
+                <li><a>Submenu Level2</a></li>
+              </ul>
+            </li>
+            <li><a>SubMenu Level1</a></li>
+          </ul>
+        </li>
+        <li><a>Portfolio</a></li>
+        <li><a>Products</a></li>
+        <li><a>Blog</a></li>
+        <li><a>Contact</a></li>
+      </ul>
+    </div>
   </body>
 </html>
